@@ -1,0 +1,69 @@
+loading problem check protected routes
+
+slider problem in products.js (88) in product in component
+
+carousel image problem in productdetail.css in product in component
+
+app.js me shipping ka route check kr see in line 75 of loginsignup.js page
+
+User changed user and viceversa in jwttoken.js app.js usercontroller.js and authentication.js in backend
+
+for deploying on heroku first login to mongo atlas now after logging in and all
+in config.env db_uri=change url password databasename ...
+now in frontend run npm run build..
+now in app.js(backend) app.use(express.static(path.join(**dirname,"../frontend/build")));
+app.get("\*",(req,res)=>{res.sendFile(path.resolve(**dirname,"../frontend/build/index.html"))}) and
+in top const path=require("path)
+then in usercontroller in line 86(backend) ${req.protocol}://${req.get("host")}/password.....
+now can delete build folder
+now in backend package json file in scripts "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+now add a file in project Procfile and write web: node backend/server.js
+now in server.js in //config line(backend) add if(process.env.NODE_ENV!=="PRODUCTION"){require.("dotenv").cut paste the below line remove dotenv import from top}
+same as above do in app.js(backend)
+now create file README.md and copy paste from site stackedit.io
+now create file .gitignore and write
+
+# dependencies
+
+/node_modules
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+# testing
+
+/frontend/coverage
+
+# production
+
+/frontend/build
+
+# misc
+
+/backend/config/config.env
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log\*
+now work on git
+now go on mern terminal and command git init
+git add.
+now go to gitbash terminal
+cd frontend
+rm -rf .git
+cd ../
+//after deleting frontend repository run command git add. ... git commit "Ecommerce"
+git remote add origin https....this was copied
+git push origin master
+now login to heroku then download heroku cli
+now run command in same git bash
+heroku login
+then in main terminal
+heroku login
+heroku git:remote -a mern-stack-ecommerce-store
+git remote
+git push heroku master
