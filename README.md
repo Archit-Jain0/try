@@ -61,14 +61,7 @@ Getting Started
         npm install
     3. Configure environment variables
   Create a .env file in the backend directory with the following keys:
-    MONGO_URI=your-mongodb-uri
-    JWT_SECRET=your-jwt-secret
-    STRIPE_SECRET_KEY=your-stripe-secret-key
-    CLOUDINARY_NAME=your-cloudinary-cloud-name
-    CLOUDINARY_API_KEY=your-cloudinary-api-key
-    CLOUDINARY_API_SECRET=your-cloudinary-api-secret
-    EMAIL_USER=your-email-address
-    EMAIL_PASS=your-email-password
+ ........
   4. Run the application
     Backend:
       npm run dev
